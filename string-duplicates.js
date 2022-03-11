@@ -1,4 +1,4 @@
-let str = "helloworld";
+let str = "helloworld"; // output: h1e1l3o2w1r1d1
 let letterArray = str.toLowerCase().trim().split(" ").join("").split("");
 
 let duplicates = {};
