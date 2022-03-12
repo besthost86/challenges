@@ -7,5 +7,5 @@
 //For example: if str is "apple!M7" then your program should return "true"
 
 let str = "apple!M7".trim();
-const re = /(?=.*[A-Z])(?=.*[0-9])(?=^.{8,30}$)^(?:(?!password).)*?$/g;
+const re = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[\\!\.,\+=':";%\*-])(?=^.{8,30}$)(?!.*password)/g;
 console.log(re.test(str));
